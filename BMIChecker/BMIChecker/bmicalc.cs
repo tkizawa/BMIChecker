@@ -57,12 +57,23 @@ namespace BMIChecker
             if (Height == 0)
             {
                 retErr = ErrorCode.Height;
-                ErrorMessage = "身長が0cmになっています。正しい値を入れて下さい。";
+                ErrorMessage = "身長が0cmです。正しい値を入れて下さい。";
+            }
+
+            if (Height < 0)
+            {
+                retErr = ErrorCode.Height;
+                ErrorMessage = "身長が適切ではありません。正しい値を入れて下さい。";
             }
             if (Weight == 0)
             {
                 retErr = ErrorCode.Weight;
-                ErrorMessage = "体重が0kgになっています。正しい値を入れて下さい。";
+                ErrorMessage = "体重が0kgです。正しい値を入れて下さい。";
+            }
+            if (Weight < 0)
+            {
+                retErr = ErrorCode.Weight;
+                ErrorMessage = "体重が適切ではありません。正しい値を入れて下さい。";
             }
             return (retErr);
         }

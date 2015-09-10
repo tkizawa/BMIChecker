@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.UI.Popups;
 
 // 空白ページのアイテム テンプレートについては、http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409 を参照してください
 
@@ -22,7 +23,9 @@ namespace BMIChecker
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        #region 定義
         private bmicalc bmi = new bmicalc();
+        #endregion
 
         public MainPage()
         {
@@ -45,36 +48,61 @@ namespace BMIChecker
             txtResult.Text = "";
         }
 
-        private void btnCalc_Click(object sender, RoutedEventArgs e)
+        private async void btnCalc_Click(object sender, RoutedEventArgs e)
         {
             string strMessage = string.Empty;
+            MessageDialog msgbox = new MessageDialog("メッセージ");
+            //msgbox.Title = "BMI肥満度チェッカー";
+
             while (true)
             {
                 // テキストボックスの確認をする。
                 // 身長の確認
                 if (txtHeight.Text == "")
                 {
-                    strMessage = "身長を入力してください。";
-                    // TODO:メッセージ出力する
+                    msgbox.Content= "身長を入力してください。";
+                    await msgbox.ShowAsync();
                     break;
                 }
 
                 // 体重の確認
                 if (txtWeight.Text == "")
                 {
-                    strMessage = "体重を入力してください。";
-                    // TODO:メッセージ出力する
+                    msgbox.Content = "体重を入力してください。";
+                    await msgbox.ShowAsync();
                     break;
                 }
 
                 // パラメータチェックする
                 // 型変換する
-                bmi.Height = float.Parse(txtHeight.Text) / 100;
-                bmi.Weight = float.Parse(txtWeight.Text);
+                try
+                {
+                    bmi.Height = float.Parse(txtHeight.Text) / 100;
+                }
+                catch
+                {
+                    // 数値に変換できない
+                    msgbox.Content = "身長が数値ではありません。";
+                    await msgbox.ShowAsync();
+                    break;
+                }
+                try
+                {
+                    bmi.Weight = float.Parse(txtWeight.Text);
+                }
+                catch
+                {
+                    // 数値に変換できない
+                    msgbox.Content = "体重が数値ではありません。";
+                    await msgbox.ShowAsync();
+                    break;
+                }
+
                 var result = bmi.CheckParam();
                 if (result != ErrorCode.NoERR)
                 {
-                    // TODO:メッセージ出力する
+                    msgbox.Content = bmi.ErrorMessage;
+                    await msgbox.ShowAsync();
                     break;
                 }
 
@@ -82,7 +110,8 @@ namespace BMIChecker
                 var BMIResult = bmi.Calc();
                 if (BMIResult != ErrorCode.NoERR)
                 {
-                    // TODO:エラーメッセージ出力する
+                    msgbox.Content = bmi.ErrorMessage;
+                    await msgbox.ShowAsync();
                     break;
                 }
                 txtResultBMI.Text = bmi.BmiValue.ToString("#.#");
