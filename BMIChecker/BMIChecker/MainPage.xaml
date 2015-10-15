@@ -18,13 +18,13 @@
         <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="24,226,0,0" TextWrapping="Wrap" Text="BMI" VerticalAlignment="Top"/>
         <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="24,267,0,0" TextWrapping="Wrap" Text="標準体重" VerticalAlignment="Top"/>
         <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="24,304,0,0" TextWrapping="Wrap" Text="標準体重との差" VerticalAlignment="Top" Height="43" Width="60"/>
-        <TextBlock x:Name="txtResultBMI" HorizontalAlignment="Left" Margin="109,230,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="54"/>
-        <TextBlock x:Name="txtResulStdWeight" HorizontalAlignment="Left" Margin="109,271,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="54"/>
-        <TextBlock x:Name="txtResultDiffStdWeight" HorizontalAlignment="Left" Margin="109,308,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="54"/>
+        <TextBlock x:Name="txtResultBMI" HorizontalAlignment="Left" Margin="109,230,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="123"/>
+        <TextBlock x:Name="txtResulStdWeight" HorizontalAlignment="Left" Margin="109,271,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="72"/>
+        <TextBlock x:Name="txtResultDiffStdWeight" HorizontalAlignment="Left" Margin="109,308,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="72"/>
         <TextBlock x:Name="textBlock8" HorizontalAlignment="Left" Margin="24,368,0,0" TextWrapping="Wrap" Text="肥満判定" VerticalAlignment="Top"/>
         <TextBlock x:Name="txtResult" HorizontalAlignment="Left" Margin="109,368,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="123"/>
-        <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="181,271,0,0" TextWrapping="Wrap" Text="kg" VerticalAlignment="Top"/>
-        <TextBlock x:Name="textBlock5_Copy" HorizontalAlignment="Left" Margin="181,308,0,0" TextWrapping="Wrap" Text="kg" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="198,275,0,0" TextWrapping="Wrap" Text="kg" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock5_Copy" HorizontalAlignment="Left" Margin="198,308,0,0" TextWrapping="Wrap" Text="kg" VerticalAlignment="Top" Width="19"/>
 
     </Grid>
 </Page>
