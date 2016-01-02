@@ -13,18 +13,36 @@
         <TextBlock x:Name="textBlock1_Copy" HorizontalAlignment="Left" Margin="24,159,0,0" TextWrapping="Wrap" Text="体重(kg)" VerticalAlignment="Top"/>
         <TextBox x:Name="txtHeight" HorizontalAlignment="Left" Margin="109,109,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="123" InputScope="Number"/>
         <TextBox x:Name="txtWeight" HorizontalAlignment="Left" Margin="109,159,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="123" InputScope="Number"/>
-        <Button x:Name="btnCalc" Content="計算" HorizontalAlignment="Left" Margin="181,429,0,0" VerticalAlignment="Top" Click="btnCalc_Click"/>
-        <Button x:Name="btnClear" Content="クリア" HorizontalAlignment="Left" Margin="109,429,0,0" VerticalAlignment="Top" Click="btnClear_Click"/>
-        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="24,226,0,0" TextWrapping="Wrap" Text="BMI" VerticalAlignment="Top"/>
-        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="24,267,0,0" TextWrapping="Wrap" Text="標準体重" VerticalAlignment="Top"/>
-        <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="24,304,0,0" TextWrapping="Wrap" Text="標準体重との差" VerticalAlignment="Top" Height="43" Width="60"/>
-        <TextBlock x:Name="txtResultBMI" HorizontalAlignment="Left" Margin="109,230,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="123"/>
-        <TextBlock x:Name="txtResulStdWeight" HorizontalAlignment="Left" Margin="109,271,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="72"/>
-        <TextBlock x:Name="txtResultDiffStdWeight" HorizontalAlignment="Left" Margin="109,308,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="72"/>
-        <TextBlock x:Name="textBlock8" HorizontalAlignment="Left" Margin="24,368,0,0" TextWrapping="Wrap" Text="肥満判定" VerticalAlignment="Top"/>
-        <TextBlock x:Name="txtResult" HorizontalAlignment="Left" Margin="109,368,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="123"/>
-        <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="198,275,0,0" TextWrapping="Wrap" Text="kg" VerticalAlignment="Top"/>
-        <TextBlock x:Name="textBlock5_Copy" HorizontalAlignment="Left" Margin="198,308,0,0" TextWrapping="Wrap" Text="kg" VerticalAlignment="Top" Width="19"/>
+        <Button x:Name="btnCalc" Content="計算" HorizontalAlignment="Left" Margin="280,109,0,0" VerticalAlignment="Top" Click="btnCalc_Click" Height="51" Width="54"/>
+        <Button x:Name="btnClear" Content="クリア" HorizontalAlignment="Left" Margin="280,169,0,0" VerticalAlignment="Top" Click="btnClear_Click" Height="31"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="39,225,0,0" TextWrapping="Wrap" Text="BMI" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="39,266,0,0" TextWrapping="Wrap" Text="標準体重" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="39,303,0,0" TextWrapping="Wrap" Text="標準体重との差" VerticalAlignment="Top" Height="43" Width="60"/>
+        <TextBlock x:Name="txtResultBMI" HorizontalAlignment="Left" Margin="124,229,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="123"/>
+        <TextBlock x:Name="txtResulStdWeight" HorizontalAlignment="Left" Margin="124,270,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="72"/>
+        <TextBlock x:Name="txtResultDiffStdWeight" HorizontalAlignment="Left" Margin="124,307,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="72"/>
+        <TextBlock x:Name="textBlock8" HorizontalAlignment="Left" Margin="39,352,0,0" TextWrapping="Wrap" Text="肥満判定" VerticalAlignment="Top"/>
+        <TextBlock x:Name="txtResult" HorizontalAlignment="Left" Margin="124,352,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="123" Foreground="#FF32C507"/>
+        <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="196,274,0,0" TextWrapping="Wrap" Text="kg" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock5_Copy" HorizontalAlignment="Left" Margin="196,307,0,0" TextWrapping="Wrap" Text="kg" VerticalAlignment="Top" Width="19"/>
+        <TextBlock x:Name="textBlock6" HorizontalAlignment="Left" Height="190" Margin="39,425,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262">
+        	<Run Text="[肥満判定]"/>
+        	<Run Text="()内はBMI値"/>
+        	<LineBreak/>
+        	<Run/>
+        	<LineBreak/>
+        	<Run Text="痩せています (18.5未満)"/>
+        	<LineBreak/>
+        	<Run Text="標準体重　(18.5以上25未満)"/>
+        	<LineBreak/>
+        	<Run Text="肥満レベル1　(25以上30未満)"/>
+        	<LineBreak/>
+        	<Run Text="肥満レベル2　(30以上35未満)"/>
+        	<LineBreak/>
+        	<Run Text="肥満レベル3　(35以上40未満)"/>
+        	<LineBreak/>
+        	<Run Text="肥満レベル4　(40以上) "/>
+        </TextBlock>
 
     </Grid>
 </Page>

@@ -42,6 +42,11 @@ namespace BMIChecker
 
         private void ClearTextBox()
         {
+            // 体重と身長の入力欄を空欄にする。
+            txtHeight.Text = "";
+            txtWeight.Text = "";
+
+            // 結果欄をクリアする。
             txtResultBMI.Text = "";
             txtResulStdWeight.Text = "";
             txtResultDiffStdWeight.Text = "";
@@ -125,6 +130,21 @@ namespace BMIChecker
                 // 判定
                 bmi.BMIJudge();
                 txtResult.Text = bmi.ResultMessage;
+                switch(bmi.ResultColor)
+                    {
+                    case "Red":
+                        txtResult.Foreground = new SolidColorBrush(Windows.UI.Colors.Red);
+                        break;
+                    case "Blue":
+                        txtResult.Foreground = new SolidColorBrush(Windows.UI.Colors.Blue);
+                        break;
+                    case "Green":
+                        txtResult.Foreground = new SolidColorBrush(Windows.UI.Colors.LimeGreen);
+                        break;
+                    default:
+                        txtResult.Foreground = new SolidColorBrush(Windows.UI.Colors.Red);
+                        break;
+                }
                 break;
             }
         }

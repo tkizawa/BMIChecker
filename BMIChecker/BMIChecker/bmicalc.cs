@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 
 namespace BMIChecker
 {
@@ -30,6 +31,8 @@ namespace BMIChecker
         /// 判定文字列
         /// </summary>
         public string ResultMessage { get; set; }
+
+        public string ResultColor { get; set; }
 
         /// <summary>
         /// エラーメッセージ
@@ -117,36 +120,43 @@ namespace BMIChecker
             {
                 // 痩せています
                 ResultMessage = "痩せています";
+                ResultColor = "Blue";
             }
             else if ((BmiValue >= 18.5) && (BmiValue < 25))
             {
                 // 標準体重
                 ResultMessage = "標準体重";
+                ResultColor = "Green";
             }
             else if ((BmiValue >= 25) && (BmiValue < 30))
             {
                 // 肥満レベル1
                 ResultMessage = "肥満レベル1";
+                ResultColor = "Red";
             }
             else if ((BmiValue >= 30) && (BmiValue < 35))
             {
                 // 肥満レベル2
                 ResultMessage = "肥満レベル2";
+                ResultColor = "Red";
             }
             else if ((BmiValue >= 35) && (BmiValue < 40))
             {
                 // 肥満レベル3
                 ResultMessage = "肥満レベル3";
+                ResultColor = "Red";
             }
             else if (BmiValue >= 40)
             {
                 // 肥満レベル4
                 ResultMessage = "肥満レベル4";
+                ResultColor = "Red";
             }
             else
             {
                 // 該当なし
                 ResultMessage = "肥満度が判定できません。";
+                ResultColor = "Red";
             }
         }
     }
