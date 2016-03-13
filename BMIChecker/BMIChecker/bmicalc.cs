@@ -12,6 +12,8 @@ namespace BMIChecker
     /// </summary>
     class bmicalc
     {
+        // TEST
+
         /// <summary>
         /// 身長
         /// </summary>
