@@ -31,8 +31,8 @@ namespace BMIChecker
         {
             this.InitializeComponent();
             ClearTextBox();
-            txtHeight.Text = "174";
-            txtWeight.Text = "63.6";
+            txtHeight.Text = "";    // 初期値は空
+            txtWeight.Text = "";    // 初期値は空
         }
 
         private void btnClear_Click(object sender, RoutedEventArgs e)
