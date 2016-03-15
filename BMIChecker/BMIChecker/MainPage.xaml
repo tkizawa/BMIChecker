@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0,10,0">
-        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="35" Margin="24,0,-5,579" TextWrapping="Wrap" Text="BMI肥満度チェッカー" VerticalAlignment="Bottom" Width="341"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="35" Margin="24,26,0,0" TextWrapping="Wrap" Text="BMI肥満度チェッカー" VerticalAlignment="Top" Width="277"/>
         <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="24,109,0,0" TextWrapping="Wrap" Text="身長(cm)" VerticalAlignment="Top"/>
         <TextBlock x:Name="textBlock1_Copy" HorizontalAlignment="Left" Margin="24,159,0,0" TextWrapping="Wrap" Text="体重(kg)" VerticalAlignment="Top"/>
         <TextBox x:Name="txtHeight" HorizontalAlignment="Left" Margin="109,109,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="123" InputScope="Number"/>
@@ -25,7 +25,7 @@
         <TextBlock x:Name="txtResult" HorizontalAlignment="Left" Margin="124,352,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Width="123" Foreground="#FF32C507"/>
         <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="196,274,0,0" TextWrapping="Wrap" Text="kg" VerticalAlignment="Top"/>
         <TextBlock x:Name="textBlock5_Copy" HorizontalAlignment="Left" Margin="196,307,0,0" TextWrapping="Wrap" Text="kg" VerticalAlignment="Top" Width="19"/>
-        <TextBlock x:Name="textBlock6" HorizontalAlignment="Left" Height="190" Margin="39,425,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262">
+        <TextBlock x:Name="textBlock6" HorizontalAlignment="Left" Height="177" Margin="39,425,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="262">
         	<Run Text="[肥満判定]"/>
         	<Run Text="()内はBMI値"/>
         	<LineBreak/>
@@ -43,6 +43,7 @@
         	<LineBreak/>
         	<Run Text="肥満レベル4　(40以上) "/>
         </TextBlock>
+        <TextBlock x:Name="textBlock7" HorizontalAlignment="Left" Height="23" Margin="10,607,0,0" TextWrapping="Wrap" Text="Copyright (c) 2016 Tomokazu Kizawa Allrights Reserved." VerticalAlignment="Top" Width="330" FontSize="12"/>
 
     </Grid>
 </Page>
