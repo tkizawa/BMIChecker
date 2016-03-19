@@ -8,7 +8,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("BMIChecker")]
 [assembly: AssemblyDescription("BMI肥満度チェッカー")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("")]
+[assembly: AssemblyCompany("WoodStream Networks")]
 [assembly: AssemblyProduct("BMIChecker")]
 [assembly: AssemblyCopyright("Copyright (c) 2016 Tomokazu Kizawa Allrights Reserved.")]
 [assembly: AssemblyTrademark("")]

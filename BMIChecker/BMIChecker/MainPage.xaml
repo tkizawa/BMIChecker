@@ -6,7 +6,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:Universal="using:Microsoft.AdMediator.Universal"
     x:Class="BMIChecker.MainPage"
-    mc:Ignorable="d">
+    mc:Ignorable="d" Width="546">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="0,0,10,0">
         <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Height="35" Margin="24,26,0,0" TextWrapping="Wrap" Text="BMI肥満度チェッカー" VerticalAlignment="Top" Width="277"/>
@@ -46,7 +46,7 @@
         </TextBlock>
         <TextBlock x:Name="textBlock7" HorizontalAlignment="Left" Height="23" Margin="10,488,0,0" TextWrapping="Wrap" Text="Copyright (c) 2016 Tomokazu Kizawa Allrights Reserved." VerticalAlignment="Top" Width="330" FontSize="12"/>
 
-        <Universal:AdMediatorControl x:Name="AdMediator_C67AAD" HorizontalAlignment="Left" Height="98" Id="AdMediator-Id-6DCAEB97-F316-4DAB-A093-D8CCAC3CABDF" Margin="10,511,0,0" VerticalAlignment="Top" Width="330"/>
+        <Universal:AdMediatorControl x:Name="AdMediator_C67AAD" HorizontalAlignment="Left" Height="600" Id="AdMediator-Id-6DCAEB97-F316-4DAB-A093-D8CCAC3CABDF" Margin="340,26,-24,0" VerticalAlignment="Top" Width="160"/>
 
     </Grid>
 </Page>
